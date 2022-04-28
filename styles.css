@@ -20,7 +20,7 @@
 
 .nav-items a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: bold;
     color:black;
     padding: 1rem;
@@ -41,6 +41,7 @@
     background:black;
     font-size:1.5rem;
     font-weight:bold;
+    border-radius: 10px;;
 
 }
 
@@ -50,6 +51,11 @@
   cursor:pointer;
 }
 /* --Navbar(End)--*/
+
+.hero{
+    vertical-align: bottom;;
+}
+
 
 /* --Hamburger Menu(Start)--*/
 
@@ -121,18 +127,32 @@ text-align: center;
 /* --Hamburger Menu(End)--*/
 
 /*--Highlights Section --*/
-#highlights{
-    background-color: lightgreen;
-    display: flex;    
-    justify-content: space-evenly;
-   
+
+
+.highlight-container{
+width: 100%;
+    background-color: black;;
+    display: inline-flex;
+  justify-content: space-evenly;
+   flex-wrap: wrap;
+
+
+ 
 }
 
-.main-card-container{
+.slogan{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-self:center;
+    background-color:black;
     display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-  
+    justify-content: center;
+    color: white;
+}
+
+.slogan-text{
+        font-size: 4rem;
+        color: lightgreen
 }
 
 
@@ -144,14 +164,14 @@ justify-content: space-evenly;
 
 .image__img{
     display: block;
-    width: 500%;
+    width: 350%;
 }
 
 .image__overlay{
     position: absolute;
     top:0;
     left: 0;
-    width: 100%;
+    width: 350%;
     height: 100%;
     background: rgba(0,0,0,0.6);
     color: white;
@@ -177,15 +197,88 @@ justify-content: space-evenly;
 }
 
 .image__title{
-    font-size: 2em;
+    font-size: 4em;
     font-weight: bold;
 }
 
 .image__description{
-    font-size: 1.25em;
+    font-size: 2em;
     margin-top: 0.25em;
 
 }
 
 
+/*--Menu Section --*/
+.menu-container{
+    background-color: lightgreen;
+    display:flex;
+    justify-content: center;
+       align-items: center;
+}
+
+.gym-container{
+    background-color: lightgreen;
+    display:flex;
+    justify-content: center;
+       align-items: center;
+}
+
+.cave-container{
+    background-color: lightgreen;
+    display:flex;
+    justify-content: center;
+       align-items: center;
+}
+
+.menu-area{
+    width: 50%
+}
+
+.menu-desc{
+       font-size: 3rem;
+  
+}
+
+.main-drink{
+    width: 50%;
+}
+
+.gym-desc{
+    font-size: 3rem;
+
+}
+.cave-desc{
+    font-size: 3rem;
+
+}
+
+.menu-btn{
+width: 12rem;
+height: 5rem;
+font-size: 2rem;
+background-color: black;
+color: lightgreen;
+border-radius:10px;
+
+}
+
+.gym-btn{
+    width: 12rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: black;
+    color: lightgreen;
+    border-radius:10px;
+    
+    }
+
+    .cave-btn{
+        width: 12rem;
+        height: 5rem;
+        font-size: 2rem;
+        background-color: black;
+        color: lightgreen;
+        border-radius:10px;
+        
+        }
 
