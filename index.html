@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.1.1/css/all.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Courgette&family=Monoton&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Sprouts Sports Bar</title>
 </head>
 
@@ -46,19 +50,18 @@
 <section id="hero" class="hero">
     <img src="images/bar banner.jpg" alt="hero image"  width="100%">
 </section>
- <!--End Of Hero Section-->         
-
+ <!--End Of Hero Section-->  
+    <div class = "slogan">
+        <h2 class="slogan-text">LARGEST NON-ALCOHOLIC SPORTS BAR & MORE!</h2>
+    </div>       
 <!--Highlights Section-->
 <section id="highlights" class="highlightcards"> 
-   <div class = "slogan">
-       <h2 class="slogan-text">LARGEST NON-ALCOHOLIC SPORTS BAR & MORE!</h2>
-   </div>
-
+   
 <div class = "highlight-container">
     <div class="image">
         <img  class="image__img" src="./images/stool2.png" alt="barstool"/>
         <div class="image__overlay">
-            <div class="image__title">Pedal Stools!</div>
+            <div class="image__title fun">CYCLE STOOLS</div>
              <p class ="image__description">
                  Burn calories while watching the big game!!
             </p>
@@ -68,9 +71,9 @@
     <div class="image">
         <img  class="image__img" src="./images/drinks/mdrink.png" alt="barstool"/>
         <div class="image__overlay">
-            <div class="image__title">Mocktails!!</div>
+            <div class="image__title fun">Mocktails Only</div>
              <p class ="image__description">
-                 We are all about health here. Therefore, we have crafted the most delicious and healthy non-alcoholic beverages.
+                 We only serve the most delicious and healthy non-alcoholic beverages.
             </p>
         </div>
     </div>
@@ -79,7 +82,7 @@
     <div class="image">
         <img  class="image__img" src="./images/gym2.png" alt="barstool"/>
         <div class="image__overlay">
-            <div class="image__title">Modern Gym</div>
+            <div class="image__title fun">Modern Gym</div>
              <p class ="image__description">
                  Enjoy the game while working out upstairs in our state of the art fitness center.
             </p>
@@ -89,7 +92,7 @@
     <div class="image">
         <img  class="image__img" src="./images/roof2.png" alt="barstool"/>
         <div class="image__overlay">
-            <div class="image__title">Ocean View</div>
+            <div class="image__title fun">Ocean View</div>
              <p class ="image__description">
                  Watch the games while enjoying the weather,hot tubs, putt-put, yoga and more!!
             </p>
@@ -99,7 +102,7 @@
     <div class="image">
         <img  class="image__img" src="./images/mancave2.png" alt="barstool"/>
         <div class="image__overlay">
-            <div class="image__title">Reserve A Man Cave!</div>
+            <div class="image__title fun">Reserve A Man Cave!</div>
              <p class ="image__description">
                  Don't have a man cave at home? That's okay; host a watch party from any of our themed man caves!
             </p>
@@ -113,25 +116,27 @@
 
 <!--Menu Section-->
 <section id="menu" class="menu-container">
-<div class = "main-drink">
-    <img class ="drink-img" src ="images/drinks/maindrink.png" width="750px">
+<div class = "col">
+    <img class ="drink-img" src ="images/drinks/drinkbacksplash.png" width="750px">
 </div>
-<div class = "menu-area">
-    <h2 class="menu-desc"> Mocktails Only! <br> All of our drinks are plant & fruit based mixed with aguave for sweetness or spices for bite. Come in today to try our world famous "Flex On The Beach".</h2>
-<button class ="menu-btn">View Menu</button>
+<div class = "col">
+    <h2 class="menu-desc"> <span class ="fun hdr">Mocktails Only! </span> <br> All of our drinks are made from organic fruits and vegtables perfectly mixed with agave for sweetness and spice blends for bite.<br> <br>Come in today to try our world famous "Flex On The Beach".</h2>
+<br>
+    <button class ="menu-btn">View Menu</button>
 </div>
 </section>
 <!--End Of Menu Section-->
 
 <!--Gym Section-->
 <section id="gym" class="gym-container">
-         <div>
-        <h2 class="gym-desc"> Pre-Meal Workout! <br> Burn those calories in advance and watch the game guilt free!</h2>
-        <button class ="gym-btn">View Menu</button>
-    </div>
-    <div class = "main-gym">
-        <img class ="gym-img" src ="images/maingym.png" width="750px">
+         <div class="col">
+        <h2 class="gym-desc"><span class ="fun hdr">Gym Gains & Game!! </span> <br> If our cycle bar stools aren't enough for you; you can burn even more calories in our fitness center while enjoying the game.</h2>
+        <br>
         <button class ="gym-btn">Membership</button>
+    </div>
+    <div class = "col">
+        <img class ="gym-img" src ="images/gymbs.png" width="750px">
+      
     </div>
         
 </section>
@@ -139,17 +144,49 @@
 
     <!--Man-Cave Section-->
     <section id="man-cave" class="man-cave-container">
-        <div class = "main-cave">
-            <img class ="cave-img" src ="images/test2.jpg" width="750px">
+        <div class = "col">
+            <img class ="cave-img" src ="images/wallbs.png" width="750px">
         </div>
-        <div>
-            <h2 class="cave-desc"> Reserve A Man Cave! <br> Unable to host a watch party at your housen for the big game? Well call up your friends and reserve one of themed entertainment rooms.</h2>
-        <button class ="cave-btn">Reserve Room</button>
+        <div class ="col">
+            <h2 class="cave-desc"> <span class ="fun hdr">Rent A Man Cave!!! </span> <br> Unable to host a watch party at your housen for the big game? Well call up your friends and reserve one of themed entertainment rooms.</h2>
+        <button class ="cave-btn">Reserve Cave</button>
         </div>
     </section>
     <!--End Of Menu Section-->
 
+    <!--Start Of Footer-->
+<footer class="myFooter ">
+<div class="links">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">TV Schedule</a></li>
+    </ul>
+</div>
+<div> 
+    <ul class="iconList">
+<li><i class="fa-brands fa-instagram fa-2xl"></i></li>
+<li><i class="fa-brands fa-facebook fa-2xl"></i></li>
+<li><i class="fa-brands fa-twitter fa-2xl"></i></li>
+    </ul>
 
+    <img class="logo" src ="images/sproutsLogo.png" width ="200px">
+</div>
+<div>
+    <ul class = "hours">
+        <li>Sunday 10AM - 11PM</li>
+        <li>Monday 10AM - 10PM</li>
+        <li>Tuesday 10AM - 10PM</li>
+        <li>Wednesday 10AM - 10PM</li>
+        <li>Thursday 10AM - 10PM</li>
+        <li>Friday 10AM - 2AM</li>
+        <li>Saturday 10AM - 2AM</li>
+    </ul>
+</div>
+
+</footer>
     <script src="js.js"></script>
 </body>
 </html>
