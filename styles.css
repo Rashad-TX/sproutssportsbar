@@ -382,3 +382,73 @@ color: lightgreen;
        font-size: 2.5rem;
    }
 
+ /*--End Of AboutUs.html --*/
+
+  /*--Menu.html --*/
+
+
+  .menu-title{
+    font-family: 'Butcherman', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 10rem;
+    text-align: center;
+  }
+  .the-menu-area{
+      background-color: white;
+      width: 100%;
+     
+  }
+
+  
+  .accordion-container{
+      background:white;
+      width: 100%;
+      border: 1px solid #ccc;
+  }
+
+  .accord-header {
+      background: black;
+     padding: 1rem 1.25rem;
+  }
+
+  .accord-body{
+      padding: 1rem 1.25rem;
+  }
+
+  .accord-content{
+      height:fit-content;
+      transition: all 0.4s ease-out;
+      overflow: hidden;
+  }
+
+  .accord-item{
+      border-bottom: 1px solid #ccc;
+  }
+
+  .accord-item :last-of-type{
+      border:none;
+  }
+
+  .acccord-title{
+    font-family: 'Butcherman', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .collapse{
+height: 0px;
+
+  }
+
+.the-items{
+    font-size: 3rem;
+    text-align: center;
+}
+ 
