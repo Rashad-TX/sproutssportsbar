@@ -507,3 +507,139 @@ height: 0px;
         background: gray
 
     }
+ /*--End of Eventshtml --*/
+
+
+ /*--Start of mancave --*/
+ .reservation{
+    
+     display: flex;
+    flex-direction: row;
+     align-items: center;
+     
+
+}
+.room-hdr{
+    font-family: 'Butcherman', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Permanent Marker', cursive;
+    color:lightgreen;
+    font-size: 4rem;
+    text-align: center; 
+    margin-left:40rem;
+}
+
+.room-slogan{
+    text-align: center;
+    justify-content: center;
+}
+
+    .res-form {
+        width: 30rem;
+        margin: 0 auto;
+        padding: 2rem;
+
+
+      }
+      
+      div.elem-group {
+        margin: 0.5rem 0;
+      }
+      
+      div.elem-group.inlined {
+        width: 100%;
+        display: inline-block;
+        margin-left: 1%;
+      
+      }
+      
+      label {
+        display: block;
+        font-family: 'Nanum Gothic';
+        padding-bottom: 0.5rem;
+        font-size: 1.25em;
+      }
+      
+      input, select {
+        border-radius: 2px;
+        border: 2px solid #777;
+        box-sizing: border-box;
+        font-size: 1.25em;
+        width: 100%;
+        padding: 10px;
+      }
+      
+           
+      .res-form-button {
+        height: 50px;
+        background: lightgreen;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      .res-form-button:hover {
+        border: 2px solid black;
+      }
+
+      .room-container{
+          display:flex;
+        width:100%;
+          flex-wrap:wrap;
+          justify-content: center;
+     
+      }
+
+      .rooms-img{
+          padding: 1rem;
+      }
+
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    top:0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background-color: rgba(00,0,0,0.3);
+    pointer-events: none;
+  
+}
+
+.modal-container.show{ 
+    pointer-events: auto;
+    opacity: 1;
+
+}
+
+.modal {
+    background-color: #fff;
+    width: 50rem;
+    max-width:100%;
+    padding: 30px 50px;
+    border-radius:10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center ;
+}
+
+.modal h1 {
+    margin: 0;
+}
+.modal p {
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+.close{
+    background-color: lightgreen;
+    width: 6rem;
+    padding:0.5rem;
+    font-size: 1.3rem;
+}

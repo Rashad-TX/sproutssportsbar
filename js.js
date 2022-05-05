@@ -64,8 +64,46 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
       });
     });
   
-    // Select the first item on page load
+ 
     items[0].classList.add("carousel__item--selected");
     buttons[0].classList.add("carousel__button--selected");
   });
-  
+
+//End of carousel
+
+//Start of man cave form
+const currentDateTime = new Date();
+const year = currentDateTime.getFullYear();
+const month = (currentDateTime.getMonth() + 1);
+const date = (currentDateTime.getDate() + 1);
+
+//if(date < 10) {
+   // date = '0' + date;
+ // }
+  //if(month < 10) {
+   // month = '0' + month;
+ // }
+
+const dateTomorrow = year + "-" + month + "-" + date;
+const checkinElem = document.querySelector("#checkin-date");
+const checkoutElem = document.querySelector("#checkout-date");
+
+checkinElem.setAttribute("min", dateTomorrow);
+
+checkinElem.onchange = function () {
+    checkoutElem.setAttribute("min", this.value);
+}
+//End of man cave form
+
+//Start of man cave modal
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal-container');
+const close = document.getElementById('close');
+
+open.addEventListener('click',() => {
+    modal_container.classList.add('show');
+});
+
+close.addEventListener('click',() => {
+    modal_container.classList.remove('show');
+});
