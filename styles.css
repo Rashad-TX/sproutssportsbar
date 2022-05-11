@@ -263,6 +263,7 @@ border-radius:10px;
 
 }
 
+
 .gym-btn{
     width: 12rem;
     height: 5rem;
@@ -282,6 +283,14 @@ border-radius:10px;
         border-radius:10px;
         
         }
+
+
+        .menu-btn,.gym-btn,.cave-btn{
+        cursor:pointer;
+
+        }
+        
+
 
     /*--Menu Section --*/    
 
