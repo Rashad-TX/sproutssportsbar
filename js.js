@@ -71,39 +71,39 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
 //End of carousel
 
-//Start of man cave form
-const currentDateTime = new Date();
-const year = currentDateTime.getFullYear();
-const month = (currentDateTime.getMonth() + 1);
-const date = (currentDateTime.getDate() + 1);
-
-//if(date < 10) {
-   // date = '0' + date;
- // }
-  //if(month < 10) {
-   // month = '0' + month;
- // }
-
-const dateTomorrow = year + "-" + month + "-" + date;
-const checkinElem = document.querySelector("#checkin-date");
-const checkoutElem = document.querySelector("#checkout-date");
-
-checkinElem.setAttribute("min", dateTomorrow);
-
-checkinElem.onchange = function () {
-    checkoutElem.setAttribute("min", this.value);
-}
-//End of man cave form
 
 //Start of man cave modal
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal-container');
 const close = document.getElementById('close');
+const fname = document.getElementById('name');
+const email = document.getElementById('email');
+const adult = document.getElementById('adult');
+const rmdate = document.getElementById('checkin-date');
+const room = document.getElementById('room-selection');
+
 
 open.addEventListener('click',() => {
     modal_container.classList.add('show');
+    fname.value='';
+    email.value='';
+    adult.value='';
+    rmdate.value='';
+    room.value='';
+
 });
 
 close.addEventListener('click',() => {
     modal_container.classList.remove('show');
 });
+
+
+async function getApi() {
+  const api_url = 'https://excuser.herokuapp.com/v1/excuse'
+  const response = await fetch (api_url);
+  const data = await response.json();
+  console.log(data)
+  const {excuse} = data[0];
+  console.log(excuse);
+  document.getElementById('excuse').textContent = excuse;
+  } 

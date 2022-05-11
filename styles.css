@@ -18,12 +18,18 @@
    
 }
 
+.container{
+margin-right: 30rem;
+}
+
 .nav-items a{
     text-decoration: none;
     font-size: 2rem;
     font-style: bold;
     color:black;
     padding: 1rem;
+
+   
   
 }
 .nav-items li{
@@ -35,21 +41,6 @@
     color:white;
 }
 
-.memb-btn{
-    padding: 0.7rem;
-    color:lightgreen;
-    background:black;
-    font-size:1.5rem;
-    font-weight:bold;
-    border-radius: 10px;
-
-}
-
-.memb-btn:hover{
-    background-color: white;
-    color:black;
-  cursor:pointer;
-}
 /* --Navbar(End)--*/
 
 .hero{
@@ -412,6 +403,7 @@ color: lightgreen;
   .accord-header {
       background: black;
      padding: 1rem 1.25rem;
+     cursor: pointer;
   }
 
   .accord-body{
@@ -633,7 +625,7 @@ height: 0px;
     margin: 0;
 }
 .modal p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     opacity: 0.7;
 }
 
@@ -642,4 +634,70 @@ height: 0px;
     width: 6rem;
     padding:0.5rem;
     font-size: 1.3rem;
+}
+ /*--End of mancave --*/
+
+
+  /*--Start of excuses --*/
+
+  .main-api-area{
+    background-color: white;
+}
+
+.exc-inst{
+    margin-top: 1rem;
+}
+
+.excuse-cont{
+    display:flex;
+    justify-content: center;
+}
+
+.exc-txt{
+    color: black;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+
+.api-btn{
+width: 30rem;
+ font-size:2.5rem;
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.8);
+ background: lightgreen;
+ padding: 15px 15px;
+ border-radius: 10px;
+ font-weight: bold;
+ text-transform: uppercase;
+ transition: all 0.2s ease-in-out;
+}
+
+.api-btn:hover{
+    color: gold;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    cursor: pointer;
+}
+
+.excuse-cont{
+    margin-bottom: 2rem;
+}
+
+.api-results{
+    width: 100%;
+    background-color: gray;
+}
+
+
+
+#excuse{
+color: white;
+font-size: 3.5rem;
+}
+
+.api-results{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }

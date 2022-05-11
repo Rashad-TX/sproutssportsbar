@@ -30,7 +30,7 @@
 
     <nav class ="container">
         <ul class="nav-items">
-            <li><a href="#">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/aboutUs.html">About Us</a></li>
             <li><a href="/menu.html">Menu</a></li>
             <li><a href="/events.html">Events</a></li>
@@ -40,127 +40,29 @@
           
         </ul>  
     </nav>
-
-        <div class = "btn-container">
-            <button class="memb-btn">Reservations</button>
-        </div>
-    
-</header>
- <!--End Of Navigation-->
-
- <!--Hero Section-->
-<section id="hero" class="hero">
-    <img src="images/bar banner.jpg" alt="hero image"  width="100%">
-</section>
- <!--End Of Hero Section-->  
-    <div class = "slogan">
-        <h2 class="slogan-text">LARGEST NON-ALCOHOLIC SPORTS BAR & MORE!</h2>
-    </div>       
-<!--Highlights Section-->
-<section id="highlights" class="highlightcards"> 
-   
-<div class = "highlight-container">
-    <div class="image">
-        <img  class="image__img" src="./images/stool2.png" alt="barstool"/>
-        <div class="image__overlay">
-            <div class="image__title fun">CYCLE STOOLS</div>
-             <p class ="image__description">
-                 Burn calories while watching the big game!!
-            </p>
-        </div>
-    </div>
-
-    <div class="image">
-        <img  class="image__img" src="./images/drinks/mdrink.png" alt="barstool"/>
-        <div class="image__overlay">
-            <div class="image__title fun">Mocktails Only</div>
-             <p class ="image__description">
-                 We only serve the most delicious and healthy non-alcoholic beverages.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="image">
-        <img  class="image__img" src="./images/gym2.png" alt="barstool"/>
-        <div class="image__overlay">
-            <div class="image__title fun">Modern Gym</div>
-             <p class ="image__description">
-                 Enjoy the game while working out upstairs in our state of the art fitness center.
-            </p>
-        </div>
-    </div>
-
-    <div class="image">
-        <img  class="image__img" src="./images/roof2.png" alt="barstool"/>
-        <div class="image__overlay">
-            <div class="image__title fun">Ocean View</div>
-             <p class ="image__description">
-                 Watch the games while enjoying the weather,hot tubs, putt-put, yoga and more!!
-            </p>
-        </div>
-    </div>
-
-    <div class="image">
-        <img  class="image__img" src="./images/mancave2.png" alt="barstool"/>
-        <div class="image__overlay">
-            <div class="image__title fun">Reserve A Man Cave!</div>
-             <p class ="image__description">
-                 Don't have a man cave at home? That's okay; host a watch party from any of our themed man caves!
-            </p>
-        </div>
-    </div>
+    </header>
+    <section class="main-api-area">
+    <div class ="exc-inst">
+<h2 class="exc-txt"> We get it. This place is like Disney World for Adults. Therefore, we know that sometimes in order for you to come visit us as much as you're wanting to you're <br>willing to miss work, dinner dates with the other married couple next door, your friends 3 year old sons birtdhay bash...etc.<br>
+<br>So we have created a tool to help our loyal customers get out of whatever it is that's keeping you from us. <br>
+Just keep pressing the random excuse generator button below until you find the perfect excuse for your scenario.<br>
+See ya soon!!</h2>
 </div>
-      </section>
 
-<!--End Of Highlights Section-->
-
-
-<!--Menu Section-->
-<section id="menu" class="menu-container">
-<div class = "col">
-    <img class ="drink-img" src ="images/drinks/drinkbacksplash.png" width="750px">
+<div class = "excuse-cont">
+<button onclick = "getApi()" class="api-btn"> Excuse Generator!</button>
 </div>
-<div class = "col">
-    <h2 class="menu-desc"> <span class ="fun hdr">Mocktails Only! </span> <br> All of our drinks are made from organic fruits and vegtables perfectly mixed with agave for sweetness and spice blends for bite.<br> <br>Come in today to try our world famous "Flex On The Beach".</h2>
-<br>
-    <button class ="menu-btn">View Menu</button>
+
+<div class = "api-results">
+<h4 id="excuse"></h4>
 </div>
 </section>
-<!--End Of Menu Section-->
-
-<!--Gym Section-->
-<section id="gym" class="gym-container">
-         <div class="col">
-        <h2 class="gym-desc"><span class ="fun hdr">Gym Gains & Game!! </span> <br> If our cycle bar stools aren't enough for you; you can burn even more calories in our fitness center while enjoying the game.</h2>
-        <br>
-        <button class ="gym-btn">Membership</button>
-    </div>
-    <div class = "col">
-        <img class ="gym-img" src ="images/testpic.png" width="750px">
-      
-    </div>
-        
-</section>
-    <!--End Of Menu Section-->
-
-    <!--Man-Cave Section-->
-    <section id="man-cave" class="man-cave-container">
-        <div class = "col">
-            <img class ="cave-img" src ="images/wallbs.png" width="750px">
-        </div>
-        <div class ="col">
-            <h2 class="cave-desc"> <span class ="fun hdr">Rent A Man Cave!!! </span> <br> Unable to host a watch party at your house for the big game? Well call up your friends and reserve one of themed entertainment rooms.</h2>
-        <button class ="cave-btn">Reserve Cave</button>
-        </div>
-    </section>
-    <!--End Of Menu Section-->
 
     <!--Start Of Footer-->
 <footer class="myFooter ">
 <div class="links">
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/aboutUs.html">About Us</a></li>
         <li><a href="/menu.html">Menu</a></li>
         <li><a href="/.events.html">Events</a></li>
