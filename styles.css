@@ -1,3 +1,7 @@
+
+
+
+
 /*Body*/
 
 * {
@@ -15,11 +19,13 @@
     justify-content: space-around;
     align-items: center;
     background-color: lightgreen;
+    height: 10rem;
    
 }
 
 .container{
 margin-right: 30rem;
+padding-left: 15rem;
 }
 
 .nav-items a{
@@ -28,10 +34,23 @@ margin-right: 30rem;
     font-style: bold;
     color:black;
     padding: 1rem;
+  }
 
-   
-  
-}
+  .exc-nav-btn{
+      cursor: pointer;
+      background-color: white;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      color: black;
+      border-radius: 20px;
+  }
+
+  .exc-nav-btn:hover{
+      background-color: lightgreen;
+      color: white;
+  }
+
+
 .nav-items li{
     list-style: none;
     display: inline-block;
@@ -69,50 +88,7 @@ margin-right: 30rem;
     border-radius: 10px;
 }
 
-@media (max-width: 1000px){
 
-.toggle-button{ 
-    display:flex;
-}
-
-.nav-items{
-    width: 100%;
-    display: none;
-}
-
-
-
-
-.hdr-container{
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.nav-items{
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
-.nav-items ul{
-    flex-direction: column;
-    width: 100%;
-}
-
-.nav-items li{
-text-align: center;
-
-}
-
-.nav-items li a{
-    padding: .5rem 1rem;
-}
-
-.nav-items.active{
-    display: flex;
-}
-
-}
     
 
 /* --Hamburger Menu(End)--*/
@@ -151,7 +127,7 @@ font-family: 'Permanent Marker', cursive;
 }
 
 .slogan-text{
-        font-size: 4rem;
+        font-size: 5.5rem;
         color: lightgreen;
 }
 
@@ -376,10 +352,10 @@ color: lightgreen;
    .topic-hdr{
    text-align: center;
        text-decoration: underline;
-       font-style: italic;
+      font-style: italic;
        color: lightgreen;
        font-weight:bolder;
-       font-size: 2.5rem;
+       font-size: 3rem;
    }
 
  /*--End Of AboutUs.html --*/
@@ -512,6 +488,15 @@ height: 0px;
 
 
  /*--Start of mancave --*/
+ 
+ .form-cont{
+     border: black solid 0.5rem;
+     background-color: lightgrey;
+     padding: 0.5rem;
+ }
+ 
+ 
+ 
  .reservation{
     
      display: flex;
@@ -581,6 +566,8 @@ height: 0px;
         padding: 0.5rem;
         border-radius: 10px;
         cursor: pointer;
+        
+
       }
       
       .res-form-button:hover {
@@ -647,19 +634,33 @@ height: 0px;
  /*--End of mancave --*/
 
 
+ .expl-cont{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+
+
+
   /*--Start of excuses --*/
 
   .main-api-area{
     background-color: white;
 }
 
+
+
 .exc-inst{
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .excuse-cont{
     display:flex;
     justify-content: center;
+    padding-top: 2rem;
 }
 
 .exc-txt{
@@ -695,13 +696,13 @@ width: 30rem;
 
 .api-results{
     width: 100%;
-    background-color: gray;
+    background-color: gold;
 }
 
 
 
 #excuse{
-color: white;
+color: black;
 font-size: 3.5rem;
 }
 
@@ -710,3 +711,61 @@ font-size: 3.5rem;
     justify-content: center;
     align-items: center;
 }
+
+/*Start Of Media Queries */
+
+/*Hamburger Menu*/
+@media only screen and (max-width: 2200px) {
+
+    .toggle-button{ 
+        display:flex;
+    }
+    
+    .nav-items{
+        width: 100%;
+        display: none;
+        
+    }
+    
+    .hdr-container{
+        flex-direction: column;
+        align-items: flex-start;
+        height:fit-content;
+        
+    }
+    
+    .nav-items{
+        flex-direction: column;
+        align-items: flex-start;
+       
+       
+      
+        
+    }
+    
+    .nav-items ul{
+        flex-direction: column;
+        width: 100%;
+            
+    }
+    
+    .nav-items li{
+        text-align: center;
+
+    
+    }
+    
+    .nav-items li a{
+        padding: .5rem 1rem;
+        
+    }
+    
+    .nav-items.active{
+        display: flex;
+     
+    }
+    
+    }
+    
+
+
