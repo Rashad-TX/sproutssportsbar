@@ -112,7 +112,8 @@
 .highlight-container{
     width: 100%;
     background-color: black;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content:center ;
     flex-wrap: wrap;
     padding-bottom: 5rem;
@@ -133,10 +134,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    font-family: 'Butcherman', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Monoton', cursive;
-font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .slogan-text{
@@ -319,8 +317,7 @@ border-radius:10px;
 
      /*--Global --*/
 .fun{
-    font-family: 'Courgette', cursive;
-font-family: 'Monoton', cursive;
+
 font-family: 'Permanent Marker', cursive;
 color: lightgreen;
 
@@ -340,10 +337,7 @@ color: lightgreen;
 }
 
    .abt-hdr{
-    font-family: 'Butcherman', cursive;
-    font-family: 'Courgette', cursive;
-    font-family: 'Monoton', cursive;
-    font-family: 'Permanent Marker', cursive;
+      font-family: 'Permanent Marker', cursive;
     color:lightgreen;
     font-size: 10rem;
 
@@ -378,10 +372,7 @@ color: lightgreen;
 
 
   .menu-title{
-    font-family: 'Butcherman', cursive;
-    font-family: 'Courgette', cursive;
-    font-family: 'Monoton', cursive;
-    font-family: 'Permanent Marker', cursive;
+     font-family: 'Permanent Marker', cursive;
     color:lightgreen;
     font-size: 10rem;
     text-align: center;
@@ -424,10 +415,7 @@ color: lightgreen;
   }
 
   .acccord-title{
-    font-family: 'Butcherman', cursive;
-    font-family: 'Courgette', cursive;
-    font-family: 'Monoton', cursive;
-    font-family: 'Permanent Marker', cursive;
+       font-family: 'Permanent Marker', cursive;
     color:lightgreen;
     font-size: 3rem;
     text-align: center;
@@ -451,28 +439,31 @@ height: 0px;
     background-color: white;
 }
 .events-hdr{
-    font-family: 'Butcherman', cursive;
-    font-family: 'Courgette', cursive;
-    font-family: 'Monoton', cursive;
     font-family: 'Permanent Marker', cursive;
     color:lightgreen;
-    font-size: 8rem;
+    font-size: 6rem;
     text-align: center; 
 }
 
-    .carousel{
-        position: relative;     
-    }
+.carousel{
+    position: relative;     
+}
+    
     .carousel__item {
-         font-family: 'Butcherman', cursive;
-        font-family: 'Courgette', cursive;
-        font-family: 'Monoton', cursive;
-        font-family: 'Permanent Marker', cursive;
+             font-family: 'Permanent Marker', cursive;
         display: none;
+    
+    }
+
+    .car_img{
+        width: 95%;
+        margin-left:3rem;
+        margin-bottom: 2rem;
+        padding-right: 2rem;
     }
 
     .carousel__item--selected{
-    display: block;
+        display: block;
     }
 
     .carousel__nav{
@@ -482,6 +473,7 @@ height: 0px;
         bottom: 0;
         left:0;
         text-align: center;
+        
     }
 
     .carousel__button{
@@ -511,7 +503,7 @@ height: 0px;
  
  
  
- .reservation{
+ .room-container{
     
      display: flex;
     flex-direction: row;
@@ -520,14 +512,11 @@ height: 0px;
 
 }
 .room-hdr{
-    font-family: 'Butcherman', cursive;
-    font-family: 'Courgette', cursive;
-    font-family: 'Monoton', cursive;
     font-family: 'Permanent Marker', cursive;
     color:lightgreen;
     font-size: 4rem;
     text-align: center; 
-    margin-left:40rem;
+
 }
 
 .room-slogan{
@@ -536,12 +525,11 @@ height: 0px;
 }
 
     .res-form {
-        width: 30rem;
-        margin: 0 auto;
+       width: 25%;
         padding: 2rem;
-
-
       }
+
+
       
       div.elem-group {
         margin: 0.5rem 0;
@@ -572,11 +560,11 @@ height: 0px;
       
            
       .res-form-button {
-        height: 50px;
+        max-height:fit-content;
         background: lightgreen;
         border: none;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0.5rem;
         border-radius: 10px;
         cursor: pointer;
@@ -658,6 +646,13 @@ height: 0px;
 
 
   /*--Start of excuses --*/
+.exc-hdr{
+ color: lightgreen;
+ font-size: 4rem;   
+ font-family: 'Permanent Marker', cursive;
+ text-align: center;
+}
+
 
   .main-api-area{
     background-color: white;
@@ -669,6 +664,7 @@ height: 0px;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .excuse-cont{
@@ -799,8 +795,25 @@ font-size: 1.5rem;
     font-size: 1rem;    
     border-radius:10px;
 }
+.res-form{
+    width: 50%;
+}
+
 
 }
+
+@media (max-width: 768px){
+    .abt-hdr{
+        font-size: 8rem;
+    }
+
+    .res-form{
+        width:50%;
+    }
+}
+
+
+
 
 @media (max-width:576px) {
     .drink-img, .gym-img, .cave-img{
@@ -823,15 +836,143 @@ font-size: 1.5rem;
             border-radius:10px;
         }
 
+        .abt-hdr{
+            font-size: 6rem;
+        }
+        .nobooze-img{
+            width: 200px;
+        }
+
+        .hours{
+            display: none;
+         }
+
+         .the-items{
+            font-size: 2rem;
+         }
+.menu-title{
+    font-size: 5rem;
+
+}
+.expl{
+    font-size: 1.5rem;
+    padding-left:1rem;
+    padding-right: 0.5rem;
+}
+
 }
 
 @media (max-width:450px) {
     .slogan-text{
         font-size: 1.5rem;
         margin-left: 1rem;
-        
-            }
+    }                                   
+    
+#highlights{
+    display:none;
 }
+
+
+ .menu-desc, .gym-desc, .cave-desc{
+    display: none;
+    }
+
+    .drink-img, .gym-img, .cave-img{
+        width: 150px;
+        }
+
+.image__img{
+    width: 25px
+}
+
+
+}
+
+@media (max-width: 415px){
+    .about-desc{
+        inline-size: 80%;
+    }
+    
+    
+    .abt-hdr{
+        font-size: 3rem;
+        padding-top:1rem;
+    }
+    .nobooze-img{
+        width: 100px;
+        padding-top:1rem;
+    }
+  
+.about-text{
+font-size: 0.8rem;
+word-wrap:all;
+}
+
+    .topic-hdr{
+        font-size:1.5rem;
+        }
+
+.menu-title{
+    font-size: 3rem;
+}
+
+.acccord-title{
+    font-size: 2rem;
+}
+.the-items{
+    font-size: 1rem;
+ }
+
+ .events-hdr{
+    font-size: 4rem;
+ }
+
+ .carousel__button{
+    width: 1.5rem;
+    height: 1.5rem;
+       
+}
+
+.room-slogan{
+    font-size: 4rem;
+}
+
+.res-form{
+    width:75%;
+}
+
+.modal-container{
+inline-size: 90%;
+}
+.modal-container h1{
+    font-size: 1rem;
+    word-wrap: all;
+
+}
+
+.modal-container p{
+    font-size: 0.8rem;
+    word-wrap: all;
+
+}
+.close{
+    font-size:0.5rem;
+    width:fit-content;
+    height: fit-content;
+    
+}  
+
+.rooms-img{
+    padding:2;
+   
+   max-height:20rem;
+}
+
+}
+
+   
+
+  
 
     
  
